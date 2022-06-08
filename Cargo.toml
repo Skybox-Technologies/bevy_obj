@@ -9,10 +9,10 @@ repository = "https://github.com/AmionSky/bevy_obj"
 readme = "README.md"
 
 [dependencies]
-bevy_app = "0.7"
-bevy_asset = "0.7"
-bevy_render = "0.7"
-bevy_utils = "0.7"
+bevy_app = { version = "0.8.0-dev", path = "../bevy/crates/bevy_app" }
+bevy_asset = { version = "0.8.0-dev", path = "../bevy/crates/bevy_asset" }
+bevy_render = { version = "0.8.0-dev", path = "../bevy/crates/bevy_render" }
+bevy_utils = { version = "0.8.0-dev", path = "../bevy/crates/bevy_utils" }
 
 anyhow = "1.0"
 thiserror = "1.0"
@@ -20,7 +20,7 @@ thiserror = "1.0"
 obj-rs = { version = "0.7", default-features = false }
 
 [dev-dependencies]
-bevy = "0.7"
+bevy = { version = "0.8.0-dev", path = "../bevy" }
 
 [[example]]
 name = "render_obj"
